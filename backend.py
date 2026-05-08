@@ -43,12 +43,12 @@ from fastapi import FastAPI, HTTPException, Depends
 from sqlalchemy.orm import Session
 
 app = FastAPI()
-"""
+
 @app.get("/")
 def root():
     return {"message": "Appointment API is running! Visit /docs for the API documentation."}
 
-"""
+
 
 #----> schedule appointment
 @app.post("/schedule_appointments/")
@@ -198,6 +198,7 @@ if __name__=="__main__":
     uvicorn.run("backend:app",host="127.0.0.1",port=8000,reload=True)
 
 #step5: test the endpoints using streamlit or postman
+
 
 
 
