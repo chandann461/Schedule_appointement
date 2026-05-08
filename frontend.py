@@ -5,7 +5,9 @@ import datetime as dt
 # =========================
 # CONFIG
 # =========================
-base_url = "http://127.0.0.1:8000"
+#base_url = "http://127.0.0.1:8000"
+base_url = "https://scheduleappointement.onrender.com"
+
 
 st.set_page_config(page_title="Appointment System", layout="centered")
 
@@ -67,7 +69,6 @@ if st.button("Schedule Appointment"):
 # =========================================================
 
 st.divider()
-
 
 st.subheader("Cancel Appointment")
 
